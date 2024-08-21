@@ -1,0 +1,27 @@
+.article {
+    border-bottom: 1px solid #eaeaea;
+
+}
+
+.container__bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px 40px;
+    background-color: rgba(161,73,250.0); 
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(161,73,250,0);
+}
+
+.container__bottom button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.container__bottom button:hover {
+    background-color: #acaaaf;
+}
