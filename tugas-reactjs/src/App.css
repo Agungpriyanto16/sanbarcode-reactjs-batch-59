@@ -70,3 +70,38 @@ p {
 .card ul li strong {
   font-weight: bold;
 }
+
+.tugas8-container {
+  width: 610px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.count-display {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.increment-button {
+  padding: 5px 270px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.increment-button:hover {
+  background-color: #ddd;
+}
+
+.warning-text {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
