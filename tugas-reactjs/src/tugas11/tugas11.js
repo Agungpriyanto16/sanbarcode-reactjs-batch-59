@@ -6,7 +6,7 @@ const Tugas11 = () => {
   const [input, setInput] = useState({ name: '', course: '', score: 0 });
 
   useEffect(() => {
-    axios.get("https://6678f9f40bd45250562081d9.mockapi.io/api/student-score")
+    axios.get("http://backendexample.sanbersy.com/api/student-scores")
       .then((res) => {
         setData(res.data);
       })
@@ -16,7 +16,7 @@ const Tugas11 = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`https://6678f9f40bd45250562081d9.mockapi.io/api/student-score/${id}`)
+    axios.delete(`http://backendexample.sanbersy.com/api/student-scores/${id}`)
       .then(() => {
         setData(data.filter((item) => item.id !== id));
       })
@@ -33,7 +33,7 @@ const Tugas11 = () => {
       score: parseInt(input.score)
     };
 
-    axios.post('https://6678f9f40bd45250562081d9.mockapi.io/api/student-score', newStudent)
+    axios.post('http://backendexample.sanbersy.com/api/student-scores', newStudent)
       .then((res) => {
         setData([...data, res.data]);
         setInput({ name: '', course: '', score: 0 });
